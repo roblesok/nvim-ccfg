@@ -11,5 +11,8 @@ if require('my.firstload')() then
   return
 end
 
+-- Globals
+require('my.globals')
+
 -- Plugins
 require('my.plugins')
