@@ -17,6 +17,13 @@ $ git clone https://github.com/roblesok/nvim-ccfg ~/.config/nvim
 :PackerCompile
 ```
 
+## Requirements
+
+```
+--- NOTE: this is not ready yet
+$ bash check.sh
+```
+
 ## Language Servers
 
 - `gopls`
