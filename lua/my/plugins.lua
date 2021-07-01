@@ -106,4 +106,17 @@ return require("packer").startup(function()
       end
     end
   }
+
+  -- Prettier
+  use { 
+    'prettier/vim-prettier', 
+    run = 'npm i',
+    config = function()
+      vim.cmd([[
+        let g:prettier#quickfix_enabled = 0
+        let g:prettier#quickfix_auto_focus = 0
+      ]])
+    end
+  }
+
 end)
