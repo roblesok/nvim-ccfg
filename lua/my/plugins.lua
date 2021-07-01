@@ -71,4 +71,7 @@ return require("packer").startup(function()
   use 'dart-lang/dart-vim-plugin'
   use 'jparise/vim-graphql'
 
+  -- Colors 
+  use 'norcalli/nvim-colorizer.lua'
+
 end)
