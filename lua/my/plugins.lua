@@ -119,4 +119,15 @@ return require("packer").startup(function()
     end
   }
 
+  -- TREE
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      vim.g["nvim_tree_gitignore"] = 1
+      vim.g["nvim_tree_quit_on_open"] = 1
+      vim.cmd [[nnoremap <A-1> :NvimTreeToggle<CR>]]
+    end
+  }
+
 end)
