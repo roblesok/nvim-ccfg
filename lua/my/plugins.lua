@@ -61,4 +61,14 @@ return require("packer").startup(function()
     end
   }
 
+  -- Languages
+  -- TODO: check if they are the best
+  use 'jelera/vim-javascript-syntax'
+  use 'othree/javascript-libraries-syntax.vim'
+  use 'leafgarland/typescript-vim'
+  use 'peitalin/vim-jsx-typescript'
+  use 'elixir-editors/vim-elixir'
+  use 'dart-lang/dart-vim-plugin'
+  use 'jparise/vim-graphql'
+
 end)
