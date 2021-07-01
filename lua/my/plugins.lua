@@ -74,4 +74,14 @@ return require("packer").startup(function()
   -- Colors 
   use 'norcalli/nvim-colorizer.lua'
 
+  -- Comments
+  use {
+    'terrortylor/nvim-comment',
+    config = function() 
+      if pcall(require, 'nvim_comment') then
+        require('nvim_comment').setup()
+      end
+    end
+  }
+
 end)
