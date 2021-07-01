@@ -98,6 +98,24 @@ function M.git_commits()
   }
 end
 
+function M.lsp_code_actions()
+  local opts = themes.get_dropdown {
+    winblend = 10,
+    border = true,
+    previewer = false,
+    shorten_path = false,
+  }
+  require('telescope.builtin').lsp_code_actions(opts)
+end 
+
+function M.project_search()
+  require('telescope.builtin').find_files {
+    previewer = false,
+    layout_strategy = "vertical",
+    cwd = require('lspconfig.util').root_pattern '.git'(vim.fn.expand "%:p"),
+  }
+end
+
 function M.flutter_commands()
   require('telescope').extensions.flutter.commands()
 end

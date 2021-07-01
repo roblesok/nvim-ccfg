@@ -35,6 +35,7 @@ map_tele("<space>gw", "grep_string", {
 map_tele("<space>ft", "git_files")
 map_tele("<space>fg", "live_grep")
 map_tele("<space>fd", "fd")
+map_tele("<space>pp", "project_search")
 map_tele("<space>fe", "file_browser")
 
 -- Git 

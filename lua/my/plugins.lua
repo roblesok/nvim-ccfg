@@ -84,4 +84,16 @@ return require("packer").startup(function()
     end
   }
 
+  -- LSP
+  use 'glepnir/lspsaga.nvim'
+  use 'ray-x/lsp_signature.nvim'
+  use 'onsails/lspkind-nvim'
+  use { 
+    'neovim/nvim-lspconfig',
+    config = function()
+      if pcall(require, 'lspconfig') then
+        require('my.lsp')
+      end
+    end
+  }
 end)
