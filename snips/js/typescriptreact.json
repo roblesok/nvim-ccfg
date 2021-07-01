@@ -1,1 +1,29 @@
-{}
+{
+  "functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'\n",
+      "const ${1:ComponentName}: React.FC<{}> = () => {",
+      "\treturn (",
+      "\t\t${0:<div>Hello World!</div>}",
+      "\t)",
+      "}\n",
+      "export default $1"
+    ]
+  },
+  "functional component with props": {
+    "prefix": "rfcp",
+    "body": [
+      "import React from 'react'\n",
+      "interface ${1:ComponentName}Props {",
+      "\t$2",
+      "}\n",
+      "const ${1}: React.FC<${1}Props> = ({$3}) => {",
+      "\treturn (",
+      "\t\t<div>{$0}</div>",
+      "\t)",
+      "}\n",
+      "export default $1"
+    ]
+  }
+}

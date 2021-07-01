@@ -1,1 +1,14 @@
-{}
+{
+  "functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'\n",
+      "const ${1:ComponentName} = () => {",
+      "\treturn (",
+      "\t\t${0:<div>Hello World!</div>}",
+      "\t)",
+      "}\n",
+      "export default $1"
+    ]
+  }
+}

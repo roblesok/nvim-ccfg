@@ -32,6 +32,10 @@
         "path": "./js/common.json"
       },
       {
+        "language": ["javascriptreact", "typescriptreact"],
+        "path": "./js/commonreact.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./js/javascriptreact.json"
       },
