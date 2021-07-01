@@ -15,14 +15,14 @@ return require("packer").startup(function()
   }
 
 	  -- Telescope
+  use 'nvim-telescope/telescope-fzy-native.nvim'
+  use 'nvim-telescope/telescope-fzf-writer.nvim'
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use {
     'nvim-telescope/telescope.nvim',
     requires = {
       'nvim-lua/plenary.nvim',
       'nvim-lua/popup.nvim',
-      'nvim-telescope/telescope-fzy-native.nvim',
-      'nvim-telescope/telescope-fzf-writer.nvim',
-      { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
     },
     config = function()
       if pcall(require, 'telescope') then
@@ -36,7 +36,6 @@ return require("packer").startup(function()
   use 'nvim-treesitter/playground'
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate',
     config = function() 
       if pcall(require, 'nvim-treesitter') then
         require'my.treesitter'
