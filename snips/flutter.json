@@ -2,7 +2,8 @@
   "stateless widget": {
     "prefix": "statel",
     "body": [
-      "class ${1:name} extends StatelessWidget {\n",
+      "class ${1:name} extends StatelessWidget {",
+      "\tconst $1({Key? key}) : super(key: key);\n",
       "\t@override",
       "\tWidget build(BuildContext context) {",
       "\t\treturn Container(",
@@ -15,7 +16,8 @@
   "statefull widget": {
     "prefix": "statef",
     "body": [
-      "class ${1:WidgetName} extends StatefulWidget {\n",
+      "class ${1:WidgetName} extends StatefulWidget {",
+      "\tconst $1({Key? key}) : super(key: key);\n",
       "\t@override",
       "\t_${1}State createState() => _${1}State();",
       "}\n",
@@ -41,7 +43,8 @@
     "body": [
       "import 'package:flutter/material.dart';\n",
       "void main() => runApp(MyApp());\n",
-      "class MyApp extends StatelessWidget {\n",
+      "class MyApp extends StatelessWidget {",
+      "\tconst MyApp({Key? key}) : super(key: key);\n",
       "\t@override",
       "\tWidget build(BuildContext context) {",
       "\t\treturn MaterialApp(",
