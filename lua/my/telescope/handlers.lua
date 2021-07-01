@@ -1,4 +1,3 @@
-
 local should_reload = true 
 local reloader = function()
   if should_reload then

@@ -8,7 +8,9 @@ return require("packer").startup(function()
   use { 
     'Julpikar/night-owl.nvim',
     config = function()
-      require'my.theme'
+      if pcall(require, 'night-owl') then
+        require'my.theme'
+      end
     end
   }
 
@@ -23,20 +25,22 @@ return require("packer").startup(function()
       { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
     },
     config = function()
-      require'my.telescope'
+      if pcall(require, 'telescope') then
+        require'my.telescope'
+      end
     end
   }
 
   -- Treesitter
   use 'p00f/nvim-ts-rainbow'
+  use 'nvim-treesitter/playground'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-    requires = {
-      'nvim-treesitter/playground',
-    },
     config = function() 
-      require'my.treesitter'
+      if pcall(require, 'nvim-treesitter') then
+        require'my.treesitter'
+      end
     end
   }
 
