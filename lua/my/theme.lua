@@ -12,4 +12,13 @@ exec(
   augroup END
 ]], false)
 
+-- Illuminate
+exec(
+[[
+  augroup Illuminate_augroup
+    au!
+    au VimEnter * hi illuminatedWord cterm=underline gui=underline
+  augroup END
+]], false)
+
 cmd([[colorscheme night-owl]])

@@ -42,5 +42,8 @@ return require("packer").startup(function()
       end
     end
   }
+  
+  -- Illuminate
+  use 'RRethy/vim-illuminate'
 
 end)
