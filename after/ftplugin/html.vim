@@ -1,0 +1,2 @@
+" Remove colorcolumn
+set cc=
