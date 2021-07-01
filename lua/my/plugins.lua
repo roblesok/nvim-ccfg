@@ -96,4 +96,14 @@ return require("packer").startup(function()
       end
     end
   }
+
+  -- Completion
+  use {
+    'hrsh7th/nvim-compe',
+    config = function()
+      if pcall(require, 'compe') then
+        require'my.completion'
+      end
+    end
+  }
 end)

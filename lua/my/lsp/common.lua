@@ -17,7 +17,7 @@ function common.on_attach(client, bufnr)
     require'lsp_signature'.on_attach({
       bind = true,
       doc_lines = 2,
-      use_lspsaga = true,
+      use_lspsaga = pcall(require, 'lspsaga'),
     })
   end
 
