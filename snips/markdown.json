@@ -1,0 +1,18 @@
+{
+  "inline code": {
+    "prefix": "code",
+    "body": "`${1} $0`"
+  },
+  "block code": {
+    "prefix": "bcode",
+    "body": [
+      "```${1:lang}",
+      "${2}",
+      "```"
+    ]
+  },
+  "horizontal rule": {
+    "prefix": "hrule",
+    "body": "----------\n"
+  }
+}

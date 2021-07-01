@@ -1,0 +1,18 @@
+{
+  "if err != nil": {
+    "prefix": "err",
+    "body": [
+      "if err != nil {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "fmt.Println": {
+    "prefix": "fp",
+    "body": "fmt.Println(\"$1\")"
+  },
+  "fmt.Printf": {
+    "prefix": "ff",
+    "body": "fmt.Printf(\"$1\", ${2:value})"
+  }
+}

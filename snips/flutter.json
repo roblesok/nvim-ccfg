@@ -1,0 +1,58 @@
+{
+  "stateless widget": {
+    "prefix": "statel",
+    "body": [
+      "class ${1:name} extends StatelessWidget {\n",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Container(",
+      "\t\t\tchild: ${2:null},",
+      "\t\t);",
+      "\t}",
+      "}"
+    ]
+  },
+  "statefull widget": {
+    "prefix": "statef",
+    "body": [
+      "class ${1:WidgetName} extends StatefulWidget {\n",
+      "\t@override",
+      "\t_${1}State createState() => _${1}State();",
+      "}\n",
+      "class _${1}State extends State<$1> {\n",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn ${0:Container()};",
+      "\t}",
+      "}"
+    ]
+  },
+  "build method": {
+    "prefix": "build",
+    "body": [
+      "@override",
+      "Widget build(BuildContext context) {",
+      "\treturn $0;",
+      "}"
+    ]
+  },
+  "material app": {
+    "prefix": "mateapp",
+    "body": [
+      "import 'package:flutter/material.dart';\n",
+      "void main() => runApp(MyApp());\n",
+      "class MyApp extends StatelessWidget {\n",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn MaterialApp(",
+      "\t\t\ttitle: 'Material App',",
+      "\t\t\thome: Scaffold(",
+      "\t\t\t\tappBar: AppBar(title: Text('App')),",
+      "\t\t\t\tbody: Center(child: Text('Hello'))",
+      "\t\t\t)",
+      "\t\t);",
+      "\t}",
+      "}"
+    ]
+  }
+}

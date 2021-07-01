@@ -1,0 +1,77 @@
+{
+  "allow": {
+    "prefix": "allow",
+    "body": "#![allow(${1})]"
+  },
+  "assert": {
+    "prefix": "assert",
+    "body": "assert!(${1:true});"
+  },
+  "assert_eq": {
+    "prefix": "assert_eq",
+    "body": "assert_eq!(${1:lhs}, ${2:rhs});"
+  },
+  "derive": {
+    "prefix": "derive",
+    "body": "#[derive(${1})]"
+  },
+  "deny": {
+    "prefix": "deny",
+    "body": "#![deny(${1})]"
+  },
+  "module documentation": {
+    "prefix": "mdoc",
+    "body": "//! ${1:module documentation}"
+  },
+  "function": {
+    "prefix": "fn",
+    "body": [
+      "/// ${1:documentation}",
+      "fn ${2:function_name}(${3:args}) -> ${4:rtype} {",
+      "\t${5:unimplemented!();}",
+      "}"
+    ]
+  },
+  "warn": {
+    "prefix": "warn",
+    "body": "#![warn(${1})]"
+  },
+  "macro_use": {
+    "prefix": "macro_use",
+    "body": "#[macro_use(${1})]"
+  },
+  "cfg": {
+    "prefix": "cfg",
+    "body": "#[cfg(${1})]"
+  },
+  "format": {
+    "prefix": "format",
+    "body": "format!(\"${1}\");"
+  },
+  "print": {
+    "prefix": "print",
+    "body": "print!(\"${1}\");"
+  },
+  "println": {
+    "prefix": "println",
+    "body": "println!(\"${1}\");"
+  },
+  "struct": {
+    "prefix": "struct",
+    "body": [
+      "#[derive(Debug)]",
+      "struct ${1:Name} {",
+      "\t${2:field}: ${3:Type},",
+      "}"
+    ]
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "#[test]",
+      "fn ${1:name}() {",
+      "\t${2:unimplemented!();}",
+      "}"
+    ]
+  }
+}

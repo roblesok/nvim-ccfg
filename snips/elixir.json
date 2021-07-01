@@ -1,0 +1,78 @@
+{
+  "module definition": {
+    "prefix": "defm",
+    "body": [
+      "defmodule ${1:ModName} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "function": {
+    "prefix": "def",
+    "body": [
+      "def ${1:fname}(${2:args})${3} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "inline function": {
+    "prefix": "idef",
+    "body": "def ${1:fname}(${2:args})${3}, do: ${4}"
+  },
+  "private function": {
+    "prefix": "defp",
+    "body": [
+      "defp ${1:fname}(${2:args})${3} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:term} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "cond": {
+    "prefix": "cond",
+    "body": [
+      "cond ${1:term} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1:cond} do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "receive": {
+    "prefix": "receive",
+    "body": [
+      "receive do",
+      "\t$0",
+      "end"
+    ]
+  },
+  "module documentation": {
+    "prefix": "mdoc",
+    "body": [
+      "@moduledoc \"\"\"",
+      "${1:documentation}",
+      "\"\"\""
+    ]
+  },
+  "documentation": {
+    "prefix": "doc",
+    "body": [
+      "@doc \"\"\"",
+      "${1:documentation}",
+      "\"\"\""
+    ]
+  }
+}

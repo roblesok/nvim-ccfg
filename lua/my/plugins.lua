@@ -133,4 +133,14 @@ return require("packer").startup(function()
   -- Flutter Tools
   use 'akinsho/flutter-tools.nvim'
 
+  -- Snippets
+  use {
+    'L3MON4D3/LuaSnip',
+    config = function()
+      if pcall(require, 'luasnip') then
+        require ('my.snippets')
+      end
+    end
+  }
+
 end)
