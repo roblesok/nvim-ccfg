@@ -21,4 +21,13 @@ exec(
   augroup END
 ]], false)
 
+-- Flutter 
+exec(
+[[
+  augroup FlutterGuides
+    au!
+    au VimEnter * hi! FlutterWidgetGuides guifg=#243447
+  augroup END
+]], false)
+
 cmd([[colorscheme night-owl]])

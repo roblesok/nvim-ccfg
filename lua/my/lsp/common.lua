@@ -45,6 +45,11 @@ function common.on_attach(client, bufnr)
     buf_set_keymap('n', '<leader>ff', '<Cmd>lua vim.lsp.buf.range_formatting()<CR>', opts)
   end
 
+  -- specific langs
+  if filetype == 'dart' then
+    telescope_mapper('<space>ft', 'flutter_commands', nil, true)
+  end
+
 end
 
 function common.on_init(client) 

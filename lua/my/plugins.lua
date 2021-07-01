@@ -130,4 +130,7 @@ return require("packer").startup(function()
     end
   }
 
+  -- Flutter Tools
+  use 'akinsho/flutter-tools.nvim'
+
 end)

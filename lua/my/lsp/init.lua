@@ -28,3 +28,19 @@ for _, lsp in ipairs(servers) do
     capabilities = updated_capabilities,
   }
 end
+
+-- FLUTTER
+local has_flutter_tools, ftools = pcall(require, "flutter-tools")
+if has_flutter_tools then
+  ftools.setup {
+    -- experimental
+    widget_guides = { 
+      enabled = true
+    },
+    lsp = {
+      on_init = common.on_init,
+      on_attach = common.on_attach,
+      capabilities = updated_capabilities,
+    }
+  }
+end
