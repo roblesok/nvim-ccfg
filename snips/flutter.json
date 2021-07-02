@@ -51,7 +51,7 @@
       "\t\t\ttitle: 'Material App',",
       "\t\t\thome: Scaffold(",
       "\t\t\t\tappBar: AppBar(title: const Text('App')),",
-      "\t\t\t\tbody: ${0:const Center(child: Text('Hello'))}",
+      "\t\t\t\tbody: ${0:const Center(child: Text('Hello'),),}",
       "\t\t\t)",
       "\t\t);",
       "\t}",
