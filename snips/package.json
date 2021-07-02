@@ -42,6 +42,10 @@
       {
         "language": "typescriptreact",
         "path": "./js/typescriptreact.json"
+      },
+      {
+        "language": "xml",
+        "path": "./xml.json"
       }
     ]
   }

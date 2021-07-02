@@ -70,6 +70,7 @@ return require("packer").startup(function()
   use 'elixir-editors/vim-elixir'
   use 'dart-lang/dart-vim-plugin'
   use 'jparise/vim-graphql'
+  use 'othree/xml.vim'
 
   -- Colors 
   use 'norcalli/nvim-colorizer.lua'

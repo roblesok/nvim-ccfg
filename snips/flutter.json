@@ -57,5 +57,34 @@
       "\t}",
       "}"
     ]
+  },
+  "material screen": {
+    "prefix": "matesc",
+    "body": [
+      "import 'package:flutter/material.dart';\n",
+      "class ${1:HomeScreen} extends StatelessWidget {",
+      "\tconst $1({Key? key}) : super(key: key);",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn Scaffold(",
+      "\t\t\tappBar: AppBar(",
+      "\t\t\t\ttitle: const Text('Home'),",
+      "\t\t\t),",
+      "\t\t\tbody: Center(",
+      "\t\t\t\tchild: ${0:Text('Awesome, Home Page'),}",
+      "\t\t\t),",
+      "\t\t);",
+      "\t}",
+      "}"
+    ]
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "import 'package:flutter/material.dart';\n",
+      "void main() {",
+      "\trunApp(const ${0:Application()});",
+      "}"
+    ]
   }
 }
