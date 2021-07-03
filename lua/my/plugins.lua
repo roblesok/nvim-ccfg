@@ -98,6 +98,16 @@ return require("packer").startup(function()
     end
   }
 
+  -- Testing Express line
+  use {
+    'tjdevries/express_line.nvim',
+    config = function () 
+      if pcall(require, 'el') then
+        require('el').setup {}
+      end
+    end
+  }
+
   -- Completion
   use {
     'hrsh7th/nvim-compe',

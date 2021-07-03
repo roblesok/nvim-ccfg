@@ -86,5 +86,45 @@
       "\trunApp(const ${0:Application()});",
       "}"
     ]
+  },
+  "alignment": {
+    "prefix": "align",
+    "body": "alignment: Alignment.${1:center}$0"
+  },
+  "MainAxisAlignment": {
+    "prefix": "maa",
+    "body": "mainAxisAlignment: MainAxisAlignment.${1:center}$0"
+  },
+  "CrossAxisAlignment": {
+    "prefix": "caa",
+    "body": "crossAxisAlignment: CrossAxisAlignment.${1:stretch}$0"
+  },
+  "title": {
+    "prefix": "title",
+    "body": "title: const Text('${1:hello world}')$0"
+  },
+  "actions": {
+    "prefix": "actions",
+    "body": [
+      "actions: <Widget>[",
+      "\t$1",
+      "]$0"
+    ]
+  },
+  "children": {
+    "prefix": "children",
+    "body": [
+      "children: <Widget>[",
+      "\t$1",
+      "]$0"
+    ]
+  },
+  "constraints": {
+    "prefix": "constraints",
+    "body": "constraints: BoxConstraints(${1:maxWidth: 100})$0"
+  },
+  "edge insets": {
+    "prefix": "edgei",
+    "body": "EdgeInsets.${1:all}($2)$0"
   }
 }
