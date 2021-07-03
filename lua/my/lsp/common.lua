@@ -21,6 +21,13 @@ function common.on_attach(client, bufnr)
     })
   end
 
+  -- Status
+  local has_status, lspstatus = pcall(require, 'lsp-status')
+  if has_status then
+    lspstatus.on_attach(client)
+    lspstatus.register_progress()
+  end
+
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Mappings

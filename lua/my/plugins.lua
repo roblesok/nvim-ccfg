@@ -89,6 +89,7 @@ return require("packer").startup(function()
   use 'glepnir/lspsaga.nvim'
   use 'ray-x/lsp_signature.nvim'
   use 'onsails/lspkind-nvim'
+  use 'nvim-lua/lsp-status.nvim'
   use { 
     'neovim/nvim-lspconfig',
     config = function()
