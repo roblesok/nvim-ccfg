@@ -4,9 +4,11 @@ require('telescope').setup {
   defaults = {
     winblend = 0,
     layout_strategy = "horizontal",
+    layout_config = {
+      prompt_position = "top",
+    },
   
     selection_strategy = "reset",
-    prompt_position = "top",
     sorting_strategy = "descending",
     scroll_strategy = "cycle",
     color_devicons = true,
