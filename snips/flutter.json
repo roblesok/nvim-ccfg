@@ -126,5 +126,65 @@
   "edge insets": {
     "prefix": "edgei",
     "body": "EdgeInsets.${1:all}($2)$0"
+  },
+  "setState": {
+    "prefix": "sets",
+    "body": [
+      "setState(() {",
+      "\t$1",
+      "})$0"
+    ]
+  },
+  "Navigator.push": {
+    "prefix": "navpush",
+    "body": [
+      "Navigaror.push(",
+      "\tcontext,",
+      "\tMaterialPageRoute(builder: (context) => ${1:RouteName()}),",
+      ");$0"
+    ]
+  },
+  "Navigator.pop": {
+    "prefix": "navpop",
+    "body": "Navigator.pop(context);$0"
+  },
+  "Navigator.pushNamed": {
+    "prefix": "navpushn",
+    "body": "Navigator.pushNamed(context, '${1:/name}');$0"
+  },
+  "Define route": {
+    "prefix": "route",
+    "body": "'${1:/home}': (context) => ${2:FirstScreen()},$0"
+  },
+  "ListView Builder": {
+    "prefix": "lbuild",
+    "body": [
+      "ListView.builder(",
+      "\titemCount: ${1:items.length},",
+      "\titemBuilder: (context, idx) {",
+      "\t\treturn ${2:widget()};",
+      "\t},",
+      ");$0"
+    ]
+  },
+  "GlobalKey": {
+    "prefix": "globalk",
+    "body": "final ${1:_formKey} = GlobalKey<FormState>();$0"
+  },
+  "Form Validator": {
+    "prefix": "validator",
+    "body": [
+      "validator: (String? value) {",
+      "\t$1",
+      "},$0"
+    ]
+  },
+  "OnAction": {
+    "prefix": "on",
+    "body": [
+      "on${1:Presed}: () {",
+      "\t$2",
+      "},$0"
+    ]
   }
 }
