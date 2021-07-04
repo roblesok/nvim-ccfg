@@ -117,7 +117,12 @@ function M.project_search()
 end
 
 function M.flutter_commands()
-  require('telescope').extensions.flutter.commands()
+  require('telescope').extensions.flutter.commands {
+    previewer = false,
+    layout_config = {
+      height = 0.4,
+    }
+  }
 end
 
 return setmetatable({}, {
