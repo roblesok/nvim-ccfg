@@ -135,5 +135,5 @@ Snippets:
 Flutter tools:
 
 ```
-<space>ft ---> Flutter tools commands
+<space>fc ---> Flutter commands
 ```

@@ -54,7 +54,7 @@ function common.on_attach(client, bufnr)
 
   -- specific langs
   if filetype == 'dart' then
-    telescope_mapper('<space>ft', 'flutter_commands', nil, true)
+    telescope_mapper('<space>fc', 'flutter_commands', nil, true)
   end
 
 end
