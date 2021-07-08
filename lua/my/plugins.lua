@@ -157,8 +157,20 @@ return require("packer").startup(function()
 
   -- Testing tabs
   use {
-    'romgrk/barbar.nvim',
-    requires = 'kyazdani42/nvim-web-devicons'
+    'akinsho/nvim-bufferline.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function() 
+      if pcall(require, 'bufferline') then
+        require('bufferline').setup {
+          options = {
+            diagnostics = 'nvim_lsp',
+            show_buffer_close_icons = false,
+            show_close_icon = false,
+            sort_by = 'directory',
+          }
+        }
+      end
+    end
   }
 
 end)
