@@ -1,0 +1,22 @@
+{
+  "Log": {
+    "prefix": "log",
+    "body": "console.log(${1})"
+  },
+  "Warn": {
+    "prefix": "warn",
+    "body": "console.warn(${1})"
+  },
+  "Error": {
+    "prefix": "err",
+    "body": "console.error(${1})"
+  },
+  "Block Doc": {
+    "prefix": "doc",
+    "body": [
+      "\\**",
+      " * $0",
+      "\\*"
+    ]
+  }
+}

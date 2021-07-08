@@ -47,4 +47,4 @@ ls.snippets = {
 }
 
 local vsnips = vim.fn.expand "~/.config/nvim/snips"
-require('luasnip/loaders/from_vscode').load({ paths = { vsnips } })
+require('luasnip/loaders/from_vscode').load({ path = vsnips } )

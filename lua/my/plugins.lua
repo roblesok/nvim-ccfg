@@ -146,12 +146,23 @@ return require("packer").startup(function()
   use 'akinsho/flutter-tools.nvim'
 
   -- Snippets
+  -- use {
+  --   'L3MON4D3/LuaSnip',
+  --   config = function()
+  --     if pcall(require, 'luasnip') then
+  --       require ('my.snippets')
+  --     end
+  --   end
+  -- }
   use {
-    'L3MON4D3/LuaSnip',
+    'hrsh7th/vim-vsnip',
+    requires = {
+      'hrsh7th/vim-vsnip-integ'
+    },
     config = function()
-      if pcall(require, 'luasnip') then
-        require ('my.snippets')
-      end
+      local snipdir = vim.fn.expand('~/.config/nvim/snips')
+      vim.g['vsnip_snippet_dir'] = snipdir
+      vim.cmd[[ imap <expr> <C-l> vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>' ]]
     end
   }
 
