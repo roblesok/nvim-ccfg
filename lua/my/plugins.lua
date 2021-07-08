@@ -104,7 +104,7 @@ return require("packer").startup(function()
     'tjdevries/express_line.nvim',
     config = function () 
       if pcall(require, 'el') then
-        require('el').setup {}
+        require('my.status')
       end
     end
   }
@@ -172,5 +172,4 @@ return require("packer").startup(function()
       end
     end
   }
-
 end)
