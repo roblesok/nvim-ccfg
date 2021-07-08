@@ -155,4 +155,10 @@ return require("packer").startup(function()
     end
   }
 
+  -- Testing tabs
+  use {
+    'romgrk/barbar.nvim',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
 end)

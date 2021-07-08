@@ -60,6 +60,7 @@ Close buffers:
 ```
 nmap bd  ---> Delete current buffer
 nmap bn  ---> Next Buffer
+nmap bp  ---> Previous Buffer
 ```
 
 Yank/Paste:

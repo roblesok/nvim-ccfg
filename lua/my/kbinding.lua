@@ -27,3 +27,4 @@ U.nmap("<leader>w", "<Cmd>:w!<CR>")
 -- Close buffers
 U.nmap("bd", "<Cmd>:bdelete<CR>")
 U.nmap("bn", "<Cmd>:bnext<CR>")
+U.nmap("bp", "<Cmd>:bprev<CR>")
