@@ -33,6 +33,15 @@ end
 local has_flutter_tools, ftools = pcall(require, "flutter-tools")
 if has_flutter_tools then
   ftools.setup {
+    -- disable autostart dev tools
+    dev_tools = {
+      autostart = false,
+      auto_open_browser = false,
+    },
+    -- open log
+    dev_log = {
+      open_cmd = 'tabedit',
+    },
     -- experimental
     widget_guides = { 
       enabled = true
