@@ -5,6 +5,7 @@ required=(
   xclip 
   rg
   fdfind
+  fzf
 )
 
 declare -a not_installed=()
