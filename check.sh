@@ -4,7 +4,7 @@ required=(
   nvim
   xclip 
   rg
-  fdfind
+  fd
   fzf
 )
 
