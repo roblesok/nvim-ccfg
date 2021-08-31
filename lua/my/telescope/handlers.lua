@@ -46,7 +46,9 @@ end
 
 function M.live_grep()
   require('telescope').extensions.fzf_writer.staged_grep {
-    shorten_path = true,
+    path_display = {
+      shorten_path = true,
+    },
     previewer = false,
     fzf_separator = "|>",
   }
